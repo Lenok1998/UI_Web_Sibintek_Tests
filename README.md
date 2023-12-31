@@ -97,7 +97,7 @@ ____
 <p align="center">
 <img title="parametrs" src="media/screen/parametrs.png">
 </p>
-После выполнения сборки, в блоке <code>Build History</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
+<p>После выполнения сборки, в блоке <code>Build History</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.</p>
 
 ![jenkins](media/screen/graphs.png "График Jenkins")
 
