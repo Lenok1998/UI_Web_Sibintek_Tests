@@ -85,7 +85,7 @@ ____
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> </a> Сборка в <a target="_blank" href="https://jenkins.autotests.cloud/job/ElenaMalysheva98-23-17/"> Jenkins </a>
 Для доступа в Jenkins необходима регистрация на ресурсе [Jenkins](https://jenkins.autotests.cloud/)
 
-![jenkins](media/screen/Build Jenkins.png "Сборка Jenkins")
+![jenkins](media/screen/Build_Jenkins.png "Сборка Jenkins")
 Для запуска сборки необходимо перейти в раздел <code>Build with parameters</code>, выбрать необходимые параметры и нажать кнопку <code>Build</code>.
 
 ###  Параметры сборки в Jenkins:
