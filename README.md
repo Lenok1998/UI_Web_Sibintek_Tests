@@ -76,7 +76,7 @@ ____
 Локальный запуск.
 Из корневой директории проекта выполнить:
 ```
-gradle clean my_test  запуск всех тестов
+gradle clean test  запуск всех тестов
 gradle clean positive_tests  запуск позитивных тестов
 gradle clean negative_tests запуск негативных тестов
 ```
