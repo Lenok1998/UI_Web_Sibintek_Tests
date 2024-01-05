@@ -102,15 +102,15 @@ public class SibintekTest extends TestBase {
 
     @Test
     @Tag("negative")
-    @DisplayName("Проверка страницы 'Вакансии'")
+    @DisplayName("Проверка яч")
     void testVacantion() {
 
         step("Открываем страницу поиска вакансий", () -> {
             careerPage.openPage();
         });
 
-        step("Проверяем, что на странице нет искомой вакансии'", () -> {
-          careerPage.vacancies();
+        step("П≈роверяем наличие нужной вакансии'", () -> {
+          careerPage.headVacancy();
         });
     }
 }

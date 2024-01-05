@@ -7,7 +7,8 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 public class CareerPage {
     private SelenideElement cTitle = $("[class='dop_h2']"),
-            vacancies = $("a[href*='https://hh.ru/vacancy/90991373?utm_medium=widgetemployer&utm_campaign=hh.ru_vacancy&utm_source=sibintek.ru&utm_term=%2Fcompany%2Fvacancies%2F']");
+            vacancy = $("a[href*='https://hh.ru/vacancy/89475451?utm_medium=widgetemployer&utm_campaign=hh.ru_vacancy&utm_source=sibintek.ru&utm_term=%2Fcompany%2Fvacancies%2F']");
+
 
     public CareerPage openPage() {
         open("https://sibintek.ru/company/vacancies/");
@@ -19,9 +20,9 @@ public class CareerPage {
         cTitle.shouldHave(text("Карьера"));
         return this;
     }
-    public CareerPage vacancies() {
-        vacancies.shouldNotHave((text("Middle QA Engineer")));
-        return this;
+    public CareerPage  headVacancy() {
+        vacancy.shouldHave((text("Бизнес-аналитик (стажер)")));
+        return  this;
     }
 
 }
