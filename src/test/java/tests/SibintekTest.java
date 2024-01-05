@@ -73,13 +73,11 @@ public class SibintekTest extends TestBase {
            mainPage.openPage();
         });
 
-        step("Проверяем, что в шапке сайта есть номер телефона'", () -> {
-            mainPage.searchNumber();
+        step("Проверяем, что в шапке сайта есть контакты'", () -> {
+            mainPage.searchContacts();
         });
 
-        step("Проверяем, что в шапке сайта есть email'", () -> {
-            mainPage.searchEmail();
-        });
+
     }
 
     @Test
