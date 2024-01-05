@@ -94,6 +94,9 @@ public class SibintekTest extends TestBase {
         step("Кликаем на него", () -> {
             businessPage.titleClick();
         });
+        step("Проверим переход на главную", () -> {
+            mainPage.searchTitle();
+        });
     }
 
     @Test
