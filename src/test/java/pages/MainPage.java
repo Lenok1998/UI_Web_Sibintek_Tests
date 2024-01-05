@@ -7,8 +7,8 @@ import static com.codeborne.selenide.Selenide.*;
 public class MainPage {
 
     private final SelenideElement title = $("[class= 'label label__large__center underline__gray__1px']");
-    private final SelenideElement number = $("[a[href*='tel:+7-495-755-52-73']");
-    private final SelenideElement email = $("[a[href*='mailto:info@sibintek.ru']");
+    private final SelenideElement number = $("[id= 'top_tel']");
+    private final SelenideElement email = $("[class='top_email']");
 
     public MainPage openPage() {
         open("https://sibintek.ru/");
