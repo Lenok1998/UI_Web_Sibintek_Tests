@@ -30,10 +30,11 @@ dependencies {
             'io.qameta.allure:allure-selenide:2.24.0'
 
     )
-    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.9.0')
+
 }
 
 tasks.withType(Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
 
     testLogging {
@@ -43,11 +44,7 @@ tasks.withType(Test) {
         }
     }
 }
-task my_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("my-tests")
-    }
-}
+
 
 task positive_tests(type: Test) {
     useJUnitPlatform {
