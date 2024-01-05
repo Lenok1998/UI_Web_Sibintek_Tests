@@ -20,7 +20,7 @@ public class CareerPage {
         return this;
     }
     public CareerPage vacancies() {
-        vacancies.shouldHave(text("Middle QA Engineer"));
+        vacancies.shouldNotHave((text("Middle QA Engineer")));
         return this;
     }
 

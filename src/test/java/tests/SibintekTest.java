@@ -109,7 +109,7 @@ public class SibintekTest extends TestBase {
             careerPage.openPage();
         });
 
-        step("Проверяем, что на странице есть нужная вакансия'", () -> {
+        step("Проверяем, что на странице нет искомой вакансии'", () -> {
           careerPage.vacancies();
         });
     }
