@@ -102,7 +102,7 @@ public class SibintekTest extends TestBase {
 
     @Test
     @Tag("negative")
-    @DisplayName("Проверка яч")
+    @DisplayName("Проверка заголовка нужной вакансии")
     void testVacantion() {
 
         step("Открываем страницу поиска вакансий", () -> {
