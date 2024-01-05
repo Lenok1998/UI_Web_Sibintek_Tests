@@ -22,7 +22,9 @@ public class SibintekTest extends TestBase {
         TestData data = new TestData();
         @Test
     @DisplayName("Проверка открытия сайта")
-    void testSiteOpen() {
+        @Tag("positive")
+
+        void testSiteOpen() {
 
         step("Открываем главную страницу", () -> {
            mainPage.openPage();
@@ -34,6 +36,7 @@ public class SibintekTest extends TestBase {
 
     @Test
     @DisplayName("Проверка наличия заголовка 'Карьера'")
+    @Tag("positive")
     void testTextVacantion() {
 
         step("Открываем страницу поиска вакансий", () -> {
