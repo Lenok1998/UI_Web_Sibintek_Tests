@@ -8,7 +8,7 @@ public class AboutPage {
 
     private SelenideElement aTitle = $("[class='dop_h2']");
     public AboutPage openPage() {
-        open("https://sibintek.ru/company/");
+        open("/company/");
         return this;
     }
 

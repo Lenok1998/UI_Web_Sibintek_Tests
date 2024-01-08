@@ -12,7 +12,7 @@ public class MainPage {
 
 
     public MainPage openPage() {
-        open("https://sibintek.ru/");
+        open("https://sibintek.ru");
         return this;
     }
     public MainPage searchTitle() {

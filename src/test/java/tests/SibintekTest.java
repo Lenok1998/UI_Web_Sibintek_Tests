@@ -1,11 +1,14 @@
 package tests;
 
+
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
+
+import org.junit.jupiter.params.ParameterizedTest;
 import pages.AboutPage;
 import pages.BusinessPage;
 import pages.CareerPage;
@@ -21,7 +24,7 @@ public class SibintekTest extends TestBase {
         AboutPage aboutPage = new AboutPage();
         TestData data = new TestData();
         @Test
-    @DisplayName("Проверка открытия сайта")
+        @DisplayName("Проверка открытия сайта")
         @Tag("positive")
 
         void testSiteOpen() {
@@ -67,7 +70,7 @@ public class SibintekTest extends TestBase {
     @Tag("positive")
 
     @DisplayName("Проверка контактов в шапке сайта")
-    void CheckContacs() {
+    void checkContacs() {
 
         step("Открываем Главную страницу", () -> {
            mainPage.openPage();
@@ -83,7 +86,7 @@ public class SibintekTest extends TestBase {
     @Test
     @Tag("positive")
     @DisplayName("Проверка перехода на главную страницу")
-    void CheckBisnes() {
+    void checkBisiness() {
 
         step("Открываем страницу бизнес-направлений", () -> {
           businessPage.openPage();
@@ -103,14 +106,14 @@ public class SibintekTest extends TestBase {
     @Test
     @Tag("negative")
     @DisplayName("Проверка заголовка нужной вакансии")
-    void testVacantion() {
+     void testVacantion() {
 
         step("Открываем страницу поиска вакансий", () -> {
             careerPage.openPage();
         });
 
-        step("П≈роверяем наличие нужной вакансии'", () -> {
-          careerPage.headVacancy();
+        step("Проверяем наличие нужной вакансии'", () -> {
+          careerPage.verifyVacancyTitle(data);
         });
     }
 }
