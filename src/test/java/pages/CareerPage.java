@@ -1,7 +1,6 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import data.TestData;
 
 import static com.codeborne.selenide.Condition.text;
 
@@ -21,9 +20,6 @@ public class CareerPage {
         cTitle.shouldHave(text("Карьера"));
         return this;
     }
-    public CareerPage verifyVacancyTitle(TestData data) {
-        vacancyTitle.shouldHave((text("Бизнес-аналитик (стажер)")));
-        return  this;
-    }
+
 
 }

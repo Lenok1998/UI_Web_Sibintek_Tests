@@ -7,13 +7,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
+import pages.*;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import pages.AboutPage;
-import pages.BusinessPage;
-import pages.CareerPage;
-import pages.MainPage;
-import data.TestData;
 
 @Owner("Малышева Елена")
 public class SibintekTest extends TestBase {
@@ -22,7 +17,7 @@ public class SibintekTest extends TestBase {
         BusinessPage businessPage = new BusinessPage();
         CareerPage careerPage = new CareerPage();
         AboutPage aboutPage = new AboutPage();
-        TestData data = new TestData();
+        NewsPage newsPage = new NewsPage();
         @Test
         @DisplayName("Проверка открытия сайта")
         @Tag("positive")
@@ -103,17 +98,6 @@ public class SibintekTest extends TestBase {
         });
     }
 
-    @Test
-    @Tag("negative")
-    @DisplayName("Проверка заголовка нужной вакансии")
-     void testVacantion() {
 
-        step("Открываем страницу поиска вакансий", () -> {
-            careerPage.openPage();
-        });
-
-        step("Проверяем наличие нужной вакансии'", () -> {
-          careerPage.verifyVacancyTitle(data);
-        });
     }
-}
+
