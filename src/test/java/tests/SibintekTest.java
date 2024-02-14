@@ -1,6 +1,9 @@
 package tests;
 
-
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -11,6 +14,9 @@ import pages.*;
 
 
 @Owner("Малышева Елена")
+@Story("Дипломный проект")
+@Feature("Автоматизация тестовых сценариев ООО ИК СИБИНТЕК")
+@Severity(SeverityLevel.MINOR)
 public class SibintekTest extends TestBase {
 
         MainPage mainPage = new MainPage();
