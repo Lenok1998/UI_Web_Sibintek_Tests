@@ -27,9 +27,7 @@ public class SibintekTest extends TestBase {
         @Test
         @DisplayName("Проверка открытия сайта")
         @Tag("positive")
-
         void testSiteOpen() {
-
         step("Открываем главную страницу", () -> {
            mainPage.openPage();
         });

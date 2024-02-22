@@ -1,13 +1,12 @@
 package tests;
 
-import com.codeborne.selenide.*;
-import io.qameta.allure.*;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
 
-import static io.qameta.allure.Allure.step;
+import org.junit.jupiter.api.Test;
+import com.codeborne.selenide.CollectionCondition;
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.ElementsCollection;
+import io.qameta.allure.Step;
 import static com.codeborne.selenide.Selenide.*;
 
 public class NewsFilterTest extends TestBase {
@@ -18,7 +17,7 @@ public class NewsFilterTest extends TestBase {
 
         Configuration.timeout = 12000;
 
-        open("press-center/news/");
+        open("/press-center/news/");
 
         ElementsCollection collection = $$("p.news-item a").shouldBe(CollectionCondition.sizeGreaterThan(10));
 
