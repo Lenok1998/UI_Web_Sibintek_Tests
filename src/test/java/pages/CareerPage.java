@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.text;
 
 import static com.codeborne.selenide.Selenide.*;
 public class CareerPage {
-    private SelenideElement cTitle = $("[class='dop_h2']"),
+    private SelenideElement cTitle = $("[class='dop_h2']");
 
 
     public CareerPage openPage() {
