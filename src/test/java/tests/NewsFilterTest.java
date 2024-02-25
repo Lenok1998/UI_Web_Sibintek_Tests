@@ -21,7 +21,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class NewsFilterTest extends TestBase {
 
     @Test
-    @Step
+    @Step ("Открываем страницу новостей")
     void newsFilterTest() {
 
         Configuration.timeout = 12000;
