@@ -21,7 +21,8 @@ import static com.codeborne.selenide.Selenide.*;
 public class NewsFilterTest extends TestBase {
 
     @Test
-    @Step ("Открываем страницу новостей")
+    @DisplayName("Фильтрация новостей по ключевым словам")
+    @Step ("Фильтруем новости по ключевым словам")
     void newsFilterTest() {
 
         Configuration.timeout = 12000;

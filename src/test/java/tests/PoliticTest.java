@@ -17,7 +17,8 @@ import static com.codeborne.selenide.Selenide.open;
 public class PoliticTest extends TestBase {
 
     @Test
-    @Step ("Открываем страницу 'О компании'")
+    @DisplayName("Загрузка и проверка PDF-файла")
+    @Step ("Скачиваем и проверяем PDF-файл")
     void downloadFileTest() throws Exception {
         open("/company/");
         File downloaded =
