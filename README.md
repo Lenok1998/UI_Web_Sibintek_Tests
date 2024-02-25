@@ -60,13 +60,15 @@ Auto:
 - ✓ Поиск заголовка "Карьера"
 - ✓ Поиск заголовка "О компании"
 - ✓ Проверка наличия контактов в шапке сайта
-- ✓ Проверка наличия интересной вакансии
+- ✓ Фильтрация вакансий по ключевым словам
+- ✓ Загрузка и проверка файла
 - ✓ Проверка перехода со страницы бизнес-направлений на главную
 - ✓ Проверка открытия ресурса
+- ✓ Фильтрация новостей по ключевым словам
 
 Manual:
 
-- ✓ Проверка перехода на страницу новостей
+- ✓ Проверка перехода на страницу закупок
   <a id="autotests"></a>
 ____
 ## :arrow_forward: Запуск автотестов
@@ -100,15 +102,21 @@ ____
 </p>
 <p>После выполнения сборки, в блоке <code>Build History</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.</p>
 
-![jenkins](media/screen/graphs.png "График Jenkins")
+## 🔖: Тест-сюиты
+
+![siute](media/screen/testsuit.png "Тест-сьюты")
+
+## :bar_chart: Графики
+
+![statistic](media/screen/statistic.png "Графики")
 
 ____
 <a id="allureReport"></a>
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> </a> Пример <a target="_blank" href="https://jenkins.autotests.cloud/job/ElenaMalysheva98-23-17/allure/"> Allure-отчета </a>
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> </a> Пример <a target="_blank" href="https://jenkins.autotests.cloud/job/023_01_ElenaMalysheva98_Sibintek_UiTests/31/allure/"> Allure-отчета </a>
 
 
 <p align="center">
-<img title="Allure Overview" src="media/screen/Allure_Report.png">
+<img title="Allure Overview" src="media/screen/Report.png">
 </p>
 
 ____
@@ -118,10 +126,20 @@ ____
 На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
 
 <p align="center">
-<img title="Allure TestOps DashBoard" src="media/screen/DashboardTestOps.png">
+<img title="Allure TestOps DashBoard" src="media/screen/dashboard.png">
 </p>
 
-![jenkins](media/screen/runAllureTestOps.png "График Jenkins")
+## 🕸️ Тест-план дипломного проекта
+
+![testplan](media/screen/testplans.png "Тест-план")
+
+## 📑 Тест-кейсы дипломного проекта
+
+![testcases](media/screen/testcases.png "Тест-кейсы")
+
+## 🚀 Запуски дипломного проекта
+
+![launches](media/screen/launches.png "Запуски")
 ____
 <a id="jira"></a>
 ## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logo/Jira.svg"> </a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1019"> Jira </a>
@@ -139,7 +157,7 @@ ____
 После завершения сборки, бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов в специально настроенный чат.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="media/screen/bot.png">
+<img width="70%" title="Telegram Notifications" src="media/screen/chat.png">
 </p>
 
 ____
