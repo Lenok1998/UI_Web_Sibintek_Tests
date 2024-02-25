@@ -116,7 +116,7 @@ ____
 
 
 <p align="center">
-<img title="Allure Overview" src="media/screen/Report.png">
+<img title="Allure Overview" src="media/screen/report.png">
 </p>
 
 ____
