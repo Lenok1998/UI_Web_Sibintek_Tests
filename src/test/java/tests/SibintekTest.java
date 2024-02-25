@@ -13,10 +13,12 @@ import static io.qameta.allure.Allure.step;
 import pages.*;
 
 
+
 @Owner("Малышева Елена")
 @Story("Дипломный проект")
 @Feature("Автоматизация тестовых сценариев ООО ИК СИБИНТЕК")
 @Severity(SeverityLevel.MINOR)
+@DisplayName("Автоматизированное тестирование сайта ООО ИК Сибинтек")
 public class SibintekTest extends TestBase {
 
         MainPage mainPage = new MainPage();
