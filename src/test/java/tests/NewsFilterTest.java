@@ -1,13 +1,22 @@
 package tests;
 
 
+import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.ElementsCollection;
-import io.qameta.allure.Step;
+
 import static com.codeborne.selenide.Selenide.*;
+
+
+@DisplayName("Фильтрация новостей по ключевым словам")
+@Owner("Малышева Елена")
+@Story("Дипломный проект")
+@Severity(SeverityLevel.NORMAL)
+
 
 public class NewsFilterTest extends TestBase {
 
