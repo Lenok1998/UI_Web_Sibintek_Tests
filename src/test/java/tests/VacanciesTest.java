@@ -21,7 +21,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class VacanciesTest extends TestBase {
 
     @Test
-   @Step ("Открываем страницу с ваканмсиями")
+    @DisplayName("Фильтрация вакансии по ключевым словам")
+   @Step ("Фильтруем вакансии по ключевым словам")
     void vacanciesTest() throws Exception {
         open("/company/vacancies/");
         ElementsCollection collection = $$("a[class*='hh-vacancy']").shouldBe(CollectionCondition.sizeGreaterThan(10));
